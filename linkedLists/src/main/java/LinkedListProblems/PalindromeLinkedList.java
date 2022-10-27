@@ -1,61 +1,63 @@
 package LinkedListProblems;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class PalindromeLinkedList {
     public static void main(String[] args) {
-        ListNode head=new ListNode(1,new ListNode(2,new ListNode(1,new ListNode(1))));
+        ListNode head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, new ListNode(6))))));
 
-        System.out.println(isPalindrome(head));
+        // System.out.println(isPalindrome(head));
 
-
+        System.out.println(oddEvenList(head));
 
     }
 
     public static boolean isPalindrome(ListNode head) {
-        ListNode current=head;
-        ListNode prev=null;
-        ListNode nextN=null;
 
-
-        // copy the LinkedList
-        ListNode newHead=new ListNode(head.val);
-        System.out.println(newHead.val);
-
-        ListNode currentN=newHead;
-        ListNode originalPointer=head;
-        while(originalPointer!=null&& originalPointer.next!=null){
-            originalPointer=originalPointer.next;
-            currentN.next=new ListNode(originalPointer.val);
-            currentN=currentN.next;
-
+        ListNode current = head;
+        ListNode newCurrent = head;
+        int size = 0;
+        Stack<Integer> stack = new Stack<>();
+        while (current != null) {
+            stack.push(current.val);
+            current = current.next;
+            size++;
         }
+        int i = 0;
+        while (i < size / 2) {
+            if (stack.peek() != newCurrent.val) {
 
-        // reverse the LinkedList
-
-        while(current!=null&& current.next!=null)
-        {
-            nextN=current.next; // move the next node
-            current.next=prev; // link the current node to prev
-            prev=current; // move prev to current
-            current=nextN; // move current to next node
-        }
-
-        head=prev;
-        ListNode pointer1=head;
-        ListNode pointer2=newHead;
-
-        while(pointer1!=null){
-            if(pointer1.val!=pointer2.val) return false;
-            pointer1=pointer1.next;
-            pointer2=pointer2.next;
+                return false;
+            }
+            stack.pop();
+            newCurrent = newCurrent.next;
+            i++;
         }
         return true;
+
+    }
+
+    public static ListNode oddEvenList(ListNode head) {
+        if (head == null) return null;
+        ListNode odd = head;
+        ListNode even = head.next;
+        ListNode evenHead = even;
+
+
+        while (even != null && even.next != null) { // even will be at the end of the linked list we are making sure that it is not null
+            odd.next = even.next;
+            odd = odd.next;
+            even.next = odd.next;
+            even = even.next;
+           
+
+        }
+
+        odd.next = evenHead; // linked odd and even lists
+
+        return head;
+
     }
 
 
-
-      }
+}
