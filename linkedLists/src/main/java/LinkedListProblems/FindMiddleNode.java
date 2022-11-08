@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 public class FindMiddleNode {
     public static void main(String[] args) {
-        Node head=new Node(1,new Node(2,new Node(3,new Node(4, new Node(5)))));
+        Node head=new Node(1,new Node(2,new Node(3,new Node(4, new Node(5, new Node(6))))));
         int counter=0;
         Node fast=head;
         Node slow=head;

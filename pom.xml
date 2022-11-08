@@ -13,6 +13,7 @@
         <module>collections_review</module>
         <module>linkedLists</module>
         <module>stacks</module>
+        <module>Trees</module>
     </modules>
 
     <properties>
