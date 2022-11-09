@@ -7,6 +7,9 @@ public class MyTree {
     TNode root;
 
     public MyTree() {
+
+
+
     }
 
     void insert(int value) {
@@ -32,8 +35,8 @@ public class MyTree {
                     break;
                 }
                 // if rightChild is not null branch into right subtree
-                current = current.rightChild;
 
+                current = current.rightChild;
             }
         }
     }
