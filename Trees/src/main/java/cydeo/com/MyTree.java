@@ -8,10 +8,6 @@ public class MyTree {
 
     public MyTree() {
 
-
-
-
-
     }
 
     void insert(int value) {
