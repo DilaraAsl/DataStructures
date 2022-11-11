@@ -4,6 +4,7 @@ public class BinarySearchTree {
     Node root;
 
     public void insert(int value){
+
         insert(this.root,value);
     }
 
