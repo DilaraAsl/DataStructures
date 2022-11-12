@@ -1,2 +1,9 @@
 /*/target/
 /.idea/
+/algorithms/algorithms-01.iml
+/collections_review/collections_review-02.iml
+/linkedLists/linkedLists-03.iml
+/stacks/stacks-04.iml
+
+*.iml
+/*/*.iml
