@@ -9,11 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>algorithms</module>
-        <module>collections_review</module>
-        <module>linkedLists</module>
-        <module>stacks</module>
-        <module>Trees</module>
+        <module>algorithms-01</module>
+        <module>collections_review-02</module>
+        <module>linkedLists-03</module>
+        <module>stacks-04</module>
+        <module>trees-05</module>
     </modules>
 
     <properties>

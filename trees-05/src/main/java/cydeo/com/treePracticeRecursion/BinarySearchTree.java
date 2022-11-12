@@ -5,7 +5,8 @@ public class BinarySearchTree {
 
     public void insert(int value){
 
-        insert(this.root,value);
+        insert(root,value); // method overloading
+
     }
 
     private Node insert(Node root, int value){ // we only want the binary search tree class to access this helper method
@@ -23,7 +24,7 @@ public class BinarySearchTree {
             root.right = insert(root.right, value);
 
         }
-        return root; // if the value is the same as root then return root
+        return root; // if the value is the same as root,then return root
 
     }
 
