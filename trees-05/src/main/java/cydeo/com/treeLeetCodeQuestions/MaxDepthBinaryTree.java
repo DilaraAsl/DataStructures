@@ -20,23 +20,26 @@ public class MaxDepthBinaryTree {
         tree.insert(29);
         tree.insert(47);
 
-        System.out.println(sumNodeDepth(rootNode));
+       System.out.println(findMaxNodeDepth(rootNode));
+
+
     }
     public static int findMaxNodeDepth(TreeNode root){
         if(root==null) return 0;
         int depthL=findMaxNodeDepth(root.left);
+
         int depthR=findMaxNodeDepth(root.right);
+
         // if root has no children Math.max(0,0)+1
         return Math.max(depthL,depthR)+1;
     }
-    public static int sumNodeDepth(TreeNode root){
-        if(root==null) return 0;
 
-        return sumNodeDepth(root.left)+findMaxNodeDepth(root.left)+sumNodeDepth(root.right)+findMaxNodeDepth(root.right);
-    }
-
-    public static int  findTotal(int i){
-       return i++;
+    public static int findLevelOfNode(TreeNode root,int key,int level){
+        if(root==null) return -1; // pops out of stack
+        if(root.val==key) return level; //
+        int l= findLevelOfNode(root.left,key,level+1);
+        if(l!=-1) return l;
+        return findLevelOfNode(root.right,key,level+1);
     }
     public static int findValueNode(TreeNode root){
         if(root==null) return 0;
