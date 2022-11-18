@@ -22,6 +22,8 @@ public class TreeApp {
         System.out.println("Level Order Traversal: ");
         tree.levelOrderTraversal();
 
+        System.out.println();
+
     }
     }
 

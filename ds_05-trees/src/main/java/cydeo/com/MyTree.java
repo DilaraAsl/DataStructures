@@ -78,6 +78,17 @@ public class MyTree {
         }
     }
 
+    public int nodeDepthSum(TNode root, int sum){
+        if(root==null) return 0;
+        return sum+nodeDepthSum(root.leftChild,1)+nodeDepthSum(root.rightChild,1);
+
+
+
+    }
+    public int calculateNodeDepthSum(){
+        return nodeDepthSum(root,0);
+    }
+
 
 
 }

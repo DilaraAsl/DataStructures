@@ -14,6 +14,7 @@
         <module>linkedLists-03</module>
         <module>stacks-04</module>
         <module>trees-05</module>
+        <module>heaps-06</module>
     </modules>
 
     <properties>
