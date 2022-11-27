@@ -9,12 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>algorithms-01</module>
-        <module>collections_review-02</module>
-        <module>linkedLists-03</module>
-        <module>stacks-04</module>
-        <module>trees-05</module>
-        <module>heaps-06</module>
+        <module>ds_01-algorithms</module>
+        <module>ds_02-collections_review</module>
+        <module>ds_03-linkedLists</module>
+        <module>ds_04-stacks</module>
+        <module>ds_05-trees</module>
+        <module>ds_06-heaps</module>
     </modules>
 
     <properties>
