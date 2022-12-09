@@ -12,4 +12,5 @@ public class MyHeap {
         if(size==0) throw new NoSuchFieldException();
         return items[0];// return the root
     }
+    public void bubbleUp(){}
 }

@@ -20,4 +20,6 @@ public class BinarySearchTree {
         }
         return root; // the value is the same as the root it  returns the root
     }
+
+
 }

@@ -15,6 +15,7 @@
         <module>ds_04-stacks</module>
         <module>ds_05-trees</module>
         <module>ds_06-heaps</module>
+        <module>ds_07_search_algorithms</module>
     </modules>
 
     <properties>
