@@ -16,6 +16,8 @@
         <module>ds_05-trees</module>
         <module>ds_06-heaps</module>
         <module>ds_07_search_algorithms</module>
+        <module>ds_00_groupTasks</module>
+        <module>ds_11_sorting</module>
     </modules>
 
     <properties>
