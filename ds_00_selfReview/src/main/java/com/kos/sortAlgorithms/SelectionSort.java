@@ -1,6 +1,6 @@
-package com.cydeo;
+package com.kos.sortAlgorithms;
 
-import java.sql.SQLOutput;
+
 import java.util.Arrays;
 import java.util.Random;
 

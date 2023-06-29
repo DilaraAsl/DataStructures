@@ -18,6 +18,7 @@
         <module>ds_07_search_algorithms</module>
         <module>ds_00_groupTasks</module>
         <module>ds_11_sorting</module>
+        <module>ds_00_selfReview</module>
     </modules>
 
     <properties>
